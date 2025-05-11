@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站导航</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 2em;
+            background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 1.5em;
+            font-weight: 600;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensures border-radius applies to children */
+        }
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        li:hover {
+             background-color: #f8f9fa;
+        }
+        a {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Vertically center content */
+            padding: 1.2em 2em;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 400;
+            transition: color 0.3s ease, padding-left 0.3s ease;
+            position: relative; /* Needed for pseudo-element positioning */
+        }
+        a:hover {
+            color: #2980b9;
+            padding-left: 2.5em; /* Indent on hover */
+        }
+        /* Optional: Add a subtle icon or indicator */
+        a::before {
+             content: '→';
+             position: absolute;
+             left: 1.5em;
+             opacity: 0;
+             transition: opacity 0.3s ease, left 0.3s ease;
+             color: #3498db;
+        }
+         a:hover::before {
+             opacity: 1;
+             left: 1em; /* Move arrow slightly on hover */
+         }
+
+    </style>
+</head>
+<body>
+    <h1>我的网站导航</h1>
+    <ul>
+        <li><a href="https://base64.morisummer.dpdns.org">文件转base64</a></li>
+        <li><a href="https://calculator.morisummer.dpdns.org">计算器</a></li>
+        <li><a href="https://chat.morisummer.dpdns.org">one web ui</a></li>
+        <li><a href="https://claw.morisummer.dpdns.org">Gemini 中转</a></li>
+        <li><a href="https://lobe.morisummer.dpdns.org">lobe</a></li>
+        <li><a href="https://memos.morisummer.dpdns.org">备忘录</a></li>
+        <li><a href="https://onehub.morisummer.dpdns.org">one hub</a></li>
+        <li><a href="https://shop.morisummer.dpdns.org">大二时手搓的购物网站</a></li>
+        <li><a href="https://web.morisummer.dpdns.org">一个ai生成的网页</a></li>
+        <li><a href="http://47.94.43.237:8012">简易AI对话</a></li>
+        <li><a href="https://chat.17k3.dpdns.org">简易AI对话(境外)</a></li>
+        <li><a href="https://17k3.dpdns.org">balance</a></li>
+        <li><a href="http://47.94.43.237:5000">小说阅读器</a></li>
+        <li><a href="https://files.morisummer.dpdns.org">小说阅读器(境外)</a></li>
+    </ul>
+</body>
+</html>
